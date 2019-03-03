@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
-import './index.css'
-import Navbar from './components/Navbar'
 
-ReactDOM.render(<Navbar />, document.getElementById('root'))
+import './stylesheets/index.css'
+import Homepage from './components/Pages/Homepage'
+
+ReactDOM.render(<Homepage />, document.getElementById('body'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

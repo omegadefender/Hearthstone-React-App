@@ -1,0 +1,13 @@
+nav {
+    background-color: black;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
