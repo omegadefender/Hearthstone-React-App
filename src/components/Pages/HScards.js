@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
 import Navbar from '../elements/Navbar'
 
-class HScards extends Component {
+class HScards extends Component {    
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            cards: {}
+        }
+        this.cards = {}
+    }
+
     componentDidMount() {
         fetch("https://omgvamp-hearthstone-v1.p.rapidapi.com/cards", {
             headers: {
@@ -9,7 +18,7 @@ class HScards extends Component {
             } 
         })
         .then(resp => resp.json())
-        .then(json => console.log(json))        
+        .then(json => this.cards = json)
     }
 
     render() {
